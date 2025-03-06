@@ -41,16 +41,18 @@
             this.btnPlus = new System.Windows.Forms.Button();
             this.btn0 = new System.Windows.Forms.Button();
             this.btnEqual = new System.Windows.Forms.Button();
+            this.textField = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(165, 34);
+            this.label1.Location = new System.Drawing.Point(162, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btn1
             // 
@@ -60,6 +62,7 @@
             this.btn1.TabIndex = 1;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // btn2
             // 
@@ -69,6 +72,7 @@
             this.btn2.TabIndex = 2;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn3
             // 
@@ -78,6 +82,7 @@
             this.btn3.TabIndex = 3;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btn4
             // 
@@ -87,6 +92,7 @@
             this.btn4.TabIndex = 6;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // btn5
             // 
@@ -96,6 +102,7 @@
             this.btn5.TabIndex = 5;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
             // btn6
             // 
@@ -135,6 +142,7 @@
             this.btn9.TabIndex = 7;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = true;
+            this.btn9.Click += new System.EventHandler(this.btn9_Click);
             // 
             // btnPlus
             // 
@@ -144,6 +152,7 @@
             this.btnPlus.TabIndex = 10;
             this.btnPlus.Text = "+";
             this.btnPlus.UseVisualStyleBackColor = true;
+            this.btnPlus.Click += new System.EventHandler(this.btnPlus_Click);
             // 
             // btn0
             // 
@@ -163,12 +172,22 @@
             this.btnEqual.TabIndex = 12;
             this.btnEqual.Text = "=";
             this.btnEqual.UseVisualStyleBackColor = true;
+            this.btnEqual.Click += new System.EventHandler(this.btnEqual_Click);
+            // 
+            // textField
+            // 
+            this.textField.Location = new System.Drawing.Point(73, 25);
+            this.textField.Multiline = true;
+            this.textField.Name = "textField";
+            this.textField.Size = new System.Drawing.Size(216, 20);
+            this.textField.TabIndex = 13;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(354, 202);
+            this.Controls.Add(this.textField);
             this.Controls.Add(this.btnEqual);
             this.Controls.Add(this.btn0);
             this.Controls.Add(this.btnPlus);
@@ -204,6 +223,7 @@
         private System.Windows.Forms.Button btnPlus;
         private System.Windows.Forms.Button btn0;
         private System.Windows.Forms.Button btnEqual;
+        private System.Windows.Forms.TextBox textField;
     }
 }
 
